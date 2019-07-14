@@ -1,5 +1,18 @@
 <head>
   <meta charset="utf-8" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="{{ site.url }}{{ page.permalink }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Dynamix Play Therapy" />
+  <meta
+    property="og:image"
+    content="{{ site.url }}/images/rosie_playing_with_boy.jpg"
+  />
+
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
@@ -8,11 +21,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
   />
-  <link rel="stylesheet" href="/css/footer.css"/>
+  <link rel="stylesheet" href="/css/footer.css" />
 
-  <title>Dynamix Play Therapy</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
